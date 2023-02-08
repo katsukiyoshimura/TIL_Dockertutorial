@@ -13,7 +13,7 @@ docker push YOUR-USER-NAME/getting-started:Docker Hubへのプッシュ。Git pu
 コンテナのファイルシステム
 コンテナの変更は他のコンテナには影響しない
 
-Volume
+named Volume 
 指定したファイルシステムをホストマシンに保存する
 データを残す手順 (named volumes)
 1. docker volume create でvolumeを作成
@@ -22,3 +22,7 @@ Volume
 4. 変更を加え、コンテナを削除
 5. 3のコマンドをもう一度実行
 (volumeを作成しデータが格納されているディレクトリにアタッチ（「マウント」と呼ばれる）することで、データを永続化することができる)
+
+Bind mount
+ホスト上の正確なマウントポイントを制御)
+
